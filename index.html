@@ -21,6 +21,12 @@
         <input id="email" name="email" type="email" autocomplete="email" required>
         <button type="submit">Continuar com e-mail</button>
       </form>
+      <form id="code-form" hidden>
+        <label for="access-code">Código temporário</label>
+        <input id="access-code" name="access-code" type="text" inputmode="numeric" autocomplete="one-time-code" required>
+        <button type="submit">Entrar na apresentação</button>
+        <button id="change-email" type="button">Usar outro e-mail</button>
+      </form>
       <p id="login-message" role="status" aria-live="polite"></p>
     </section>
   </main>
