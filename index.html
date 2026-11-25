@@ -15,16 +15,12 @@
       <img src="./logo.png" alt="Cereal Ouro" class="logo">
       <small>SISTEMA DE GESTÃO INTEGRADO</small>
       <h1 id="login-title">Mapa Estratégico 2027</h1>
-      <p>Acesso reservado aos gestores autorizados. Informe seu e-mail e aguarde a validação de Rogério.</p>
+      <p>Acesso reservado aos gestores autorizados. Informe seu e-mail para abrir a apresentação.</p>
       <form id="login-form">
         <label for="email">E-mail</label>
         <input id="email" name="email" type="email" autocomplete="email" required>
-        <button type="submit">Solicitar acesso</button>
+        <button type="submit">Entrar</button>
       </form>
-      <div id="pending-access" hidden>
-        <p>Solicitação <strong id="request-number"></strong> aguardando aprovação. Confirme este número com Rogério para que ele valide sua identidade.</p>
-        <button id="cancel-request" type="button">Cancelar solicitação</button>
-      </div>
       <p id="login-message" role="status" aria-live="polite"></p>
     </section>
   </main>
@@ -41,9 +37,6 @@
   <dialog id="access-dialog" aria-labelledby="access-title">
     <div class="dialog-head"><h2 id="access-title">Gerenciar acessos</h2><button id="close-access" aria-label="Fechar">Fechar</button></div>
     <p>Rogério e Diego podem alterar o acesso dos demais gestores. Toda mudança é registrada.</p>
-    <h3>Solicitações aguardando validação</h3>
-    <p>Confirme a identidade da pessoa e o número da solicitação antes de aprovar.</p>
-    <div id="pending-list"></div>
     <div id="access-list"></div>
     <h3>Alterações recentes</h3>
     <div id="access-audit"></div>
